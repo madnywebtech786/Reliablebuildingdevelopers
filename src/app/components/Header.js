@@ -18,25 +18,26 @@ const navItems = [
     name: "Services",
     href: "#",
     dropdown: [
-      { name: "Home Renovation", href: "#" },
-      { name: "Basement Renovation", href: "#" },
-      { name: "Basement Lemination", href: "#" },
-      { name: "Kitchen Remodeling", href: "#" },
-      { name: "Bathroom Remodeling", href: "#" },
-      { name: "Flooring", href: "#" },
-      { name: "Interior", href: "#" },
-      { name: "Gaurage Development", href: "#" },
+      { name: "Home Renovation", href: "/services/home-renovation" },
+      { name: "Basement Renovation", href: "/services/basement-renovation" },
+      { name: "Basement Lemination", href: "/services/basement-lemaination" },
+      { name: "Kitchen Remodeling", href: "/services/kitchen-remodeling" },
+      { name: "Bathroom Remodeling", href: "/services/bathroom-remodeling" },
+      { name: "Flooring", href: "/services/flooring" },
+      { name: "Interior", href: "/services/interior" },
+      { name: "Garage Development", href: "/services/garage-development" },
 
       {
         name: "Other Services",
         href: "#",
         dropdown: [
-          { name: "Framing", href: "#" },
-          { name: "electrical", href: "#" },
+          { name: "Framing", href: "/services/framing" },
+          { name: "Electrical", href: "/services/electrical" },
         ],
       },
     ],
   },
+
   { name: "Projects", href: "/projects" },
   { name: "Contact Us", href: "/contact" },
 ];
@@ -44,6 +45,10 @@ const navItems = [
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
+
+  // mobile accordion state: store expanded top-level items and expanded nested items
+  const [expanded, setExpanded] = useState(new Set()); // holds top-level item names
+  const [subExpanded, setSubExpanded] = useState(new Set()); // holds keys like "Services|Other Services"
 
   useEffect(() => {
     const handleScroll = () => {
@@ -54,6 +59,31 @@ const Header = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const toggleExpand = (name) => {
+    setExpanded((prev) => {
+      const next = new Set(prev);
+      if (next.has(name)) next.delete(name);
+      else next.add(name);
+      return next;
+    });
+  };
+
+  const toggleSubExpand = (key) => {
+    setSubExpanded((prev) => {
+      const next = new Set(prev);
+      if (next.has(key)) next.delete(key);
+      else next.add(key);
+      return next;
+    });
+  };
+
+  // close helper that also collapses accordions
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+    setExpanded(new Set());
+    setSubExpanded(new Set());
+  };
 
   return (
     <header
@@ -156,7 +186,7 @@ const Header = () => {
           </nav>
 
           <div className="flex items-center gap-2">
-            <Link href="#" className="hidden lg:block ml-4">
+            <Link href="tel:+11234567890" className="hidden lg:block ml-4">
               <div
                 className="bg-primary text-white font-semibold text-sm py-[14px] px-8 transition-all duration-300 hover:bg-dark-text"
                 style={{
@@ -164,6 +194,16 @@ const Header = () => {
                 }}
               >
                 Call Now
+              </div>
+            </Link>
+            <Link href="/contact" className="hidden lg:block">
+              <div
+                className="bg-primary text-white font-semibold text-sm py-[14px] px-8 transition-all duration-300 hover:bg-dark-text"
+                style={{
+                  clipPath: "polygon(10% 0, 100% 0, 90% 100%, 0% 100%)",
+                }}
+              >
+                Get Qoute
               </div>
             </Link>
             <button
@@ -181,38 +221,182 @@ const Header = () => {
         </div>
       </div>
 
-      {isMenuOpen && (
-        <div className="lg:hidden absolute top-full left-0 w-full bg-white shadow-lg animate-in fade-in-20 slide-in-from-top-4 duration-300">
-          <nav className="py-4">
-            <ul>
+      {/* ---------------------------
+          MOBILE SLIDING PANEL (right -> left)
+         --------------------------- */}
+      {/* rendered always so close animation stays smooth */}
+      <div className="lg:hidden">
+        {/* backdrop overlay */}
+        <div
+          className={`fixed inset-0 z-40 transition-opacity duration-300 ${
+            isMenuOpen
+              ? "opacity-50 pointer-events-auto"
+              : "opacity-0 pointer-events-none"
+          } bg-black`}
+          onClick={closeMenu}
+          aria-hidden={!isMenuOpen}
+        />
+
+        {/* sliding panel */}
+        <aside
+          className={`fixed top-0 right-0 z-50 h-full w-full sm:w-[480px] bg-white shadow-xl transform transition-transform duration-300 ease-in-out
+            ${isMenuOpen ? "translate-x-0" : "translate-x-full"}`}
+          aria-hidden={!isMenuOpen}
+        >
+          {/* header inside panel */}
+          <div className="flex items-center justify-between px-4 py-4 border-b">
+            <div className="flex items-center gap-3">
+              <Image
+                src={"/images/logo.png"}
+                width={90}
+                height={60}
+                alt="logo"
+                className="w-28 h-16 object-contain"
+              />
+            </div>
+            <button onClick={closeMenu} aria-label="Close menu" className="p-2">
+              <X className="h-6 w-6" />
+            </button>
+          </div>
+
+          {/* scrollable menu area */}
+          <nav className="overflow-y-auto h-[calc(100vh-64px)] p-6">
+            <ul className="space-y-3">
               {navItems.map((item) => (
-                <li key={item.name} className="border-b border-gray-200">
-                  <Link
-                    href={item.href}
-                    className="flex justify-between items-center px-6 py-3 text-sm font-medium uppercase hover:text-primary-red transition-colors"
-                  >
-                    {item.name}
-                    {item.dropdown && <ChevronDown className="h-4 w-4" />}
-                  </Link>
-                  {/* Note: Mobile dropdowns would need separate state logic for expansion */}
+                <li key={item.name} className="border-b border-gray-200 pb-2">
+                  {item.dropdown ? (
+                    <>
+                      <button
+                        onClick={() => toggleExpand(item.name)}
+                        className="w-full flex items-center justify-between py-3 text-sm font-semibold uppercase"
+                        aria-expanded={expanded.has(item.name)}
+                      >
+                        <span>{item.name}</span>
+                        <ChevronDown
+                          className={`h-4 w-4 transition-transform ${
+                            expanded.has(item.name) ? "rotate-180" : ""
+                          }`}
+                        />
+                      </button>
+
+                      {/* animated accordion panel for first-level */}
+                      <div
+                        className={`overflow-hidden transition-all duration-300 ${
+                          expanded.has(item.name)
+                            ? "max-h-[1000px] opacity-100 mt-2"
+                            : "max-h-0 opacity-0"
+                        }`}
+                      >
+                        <ul className="pl-3">
+                          {item.dropdown.map((subItem) => (
+                            <li key={subItem.name} className="py-2">
+                              {subItem.dropdown ? (
+                                <>
+                                  <button
+                                    onClick={() =>
+                                      toggleSubExpand(
+                                        `${item.name}|${subItem.name}`
+                                      )
+                                    }
+                                    className="w-full flex items-center justify-between text-sm"
+                                    aria-expanded={subExpanded.has(
+                                      `${item.name}|${subItem.name}`
+                                    )}
+                                  >
+                                    <span>{subItem.name}</span>
+                                    <ChevronDown
+                                      className={`h-3 w-3 transition-transform ${
+                                        subExpanded.has(
+                                          `${item.name}|${subItem.name}`
+                                        )
+                                          ? "rotate-180"
+                                          : ""
+                                      }`}
+                                    />
+                                  </button>
+
+                                  <div
+                                    className={`overflow-hidden transition-all duration-300 ${
+                                      subExpanded.has(
+                                        `${item.name}|${subItem.name}`
+                                      )
+                                        ? "max-h-[800px] opacity-100 mt-2"
+                                        : "max-h-0 opacity-0"
+                                    }`}
+                                  >
+                                    <ul className="pl-3">
+                                      {subItem.dropdown.map((subSub) => (
+                                        <li key={subSub.name} className="py-1">
+                                          <Link
+                                            href={subSub.href}
+                                            onClick={closeMenu}
+                                            className="block text-sm"
+                                          >
+                                            {subSub.name}
+                                          </Link>
+                                        </li>
+                                      ))}
+                                    </ul>
+                                  </div>
+                                </>
+                              ) : (
+                                <Link
+                                  href={subItem.href}
+                                  onClick={closeMenu}
+                                  className="block text-sm"
+                                >
+                                  {subItem.name}
+                                </Link>
+                              )}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </>
+                  ) : (
+                    <Link
+                      href={item.href}
+                      onClick={closeMenu}
+                      className="block py-3 text-sm font-semibold uppercase"
+                    >
+                      {item.name}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>
-            <div className="px-6 py-4">
-              <Link href="#">
+
+            {/* CTA at bottom of menu */}
+            <div className="mt-6 px-2 flex flex-col gap-4">
+              <Link href="tel:+11234567890">
                 <div
-                  className="bg-primary-red text-white font-semibold text-sm py-[14px] px-8 w-full text-center"
+                  onClick={closeMenu}
+                  className="bg-primary text-white font-semibold text-sm py-[14px] px-8 w-full text-center"
                   style={{
                     clipPath: "polygon(10% 0, 100% 0, 90% 100%, 0% 100%)",
                   }}
                 >
-                  Order Now
+                  Call Now
+                </div>
+              </Link>
+              <Link href="/contact">
+                <div
+                  onClick={closeMenu}
+                  className="bg-primary text-white font-semibold text-sm py-[14px] px-8 w-full text-center"
+                  style={{
+                    clipPath: "polygon(10% 0, 100% 0, 90% 100%, 0% 100%)",
+                  }}
+                >
+                  Get Qoute
                 </div>
               </Link>
             </div>
           </nav>
-        </div>
-      )}
+        </aside>
+      </div>
+      {/* ---------------------------
+          END MOBILE PANEL
+         --------------------------- */}
     </header>
   );
 };

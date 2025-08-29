@@ -33,6 +33,32 @@ body {
 html {
   scroll-behavior: smooth !important;
 }
+
+.bg-gradient-3 {
+  background: #1471ba;
+  background: linear-gradient(
+    259deg,
+    rgba(20, 113, 186) 0%,
+    rgba(26, 39, 110, 1) 100%
+  );
+}
+
+.zoom-effect {
+  opacity: 0.2;
+  animation: zoomInOut 4s ease-in-out infinite;
+  transform-origin: center; /* ensures it scales from center */
+}
+
+@keyframes zoomInOut {
+  0%,
+  100% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
 .slide1Bg {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
     url("/images/home.png");
@@ -102,7 +128,6 @@ nav a:hover::before {
   pointer-events: auto;
 }
 
-
 .decor::before {
   position: absolute;
   bottom: 0;
@@ -123,8 +148,12 @@ nav a:hover::before {
   background-color: var(--primary);
 }
 
-
-.serviceCard{
+.serviceCard {
   clip-path: polygon(0 0, 100% 9%, 100% 100%, 0% 100%);
-
+}
+.serviceImg {
+  -webkit-mask-image: url("/images/shape6.png");
+  mask-image: url("/images/shape6.png");
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%;
 }
