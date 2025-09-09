@@ -90,10 +90,10 @@ const Footer = () => {
                   className="text-primary-red mt-1 flex-shrink-0"
                 />
                 <a
-                  href="mailto:info@gmail.com"
+                  href="mailto:info@reliablebuildingdevelopers.ca"
                   className="hover:text-primary-red transition-colors"
                 >
-                  info@gmail.com
+                  info@reliablebuildingdevelopers.ca
                 </a>
               </li>
             </ul>

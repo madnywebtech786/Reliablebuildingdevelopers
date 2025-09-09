@@ -10,6 +10,7 @@ import {
   Menu as MenuIcon,
   X,
 } from "lucide-react";
+import TopBar from "../sections/TopBar";
 
 const navItems = [
   { name: "HOME", href: "/", active: true },
@@ -91,6 +92,7 @@ const Header = () => {
         isSticky ? "shadow-md py-4" : "py-3"
       }`}
     >
+      <TopBar />
       <div className=" px-4 sm:px-8 md:px-12 lg:px-20">
         <div className="flex justify-between items-center">
           <Link href="/" className="flex-shrink-0">

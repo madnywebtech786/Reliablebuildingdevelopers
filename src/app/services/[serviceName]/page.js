@@ -1,6 +1,5 @@
-"use client";
 import React from "react";
-import { useParams, notFound } from "next/navigation";
+import { notFound } from "next/navigation";
 import Breadcrumb from "@/app/components/Breadcrumb";
 import Image from "next/image";
 import { CheckCircle } from "lucide-react";
@@ -178,15 +177,12 @@ const services = [
   },
 ];
 
-export default function page() {
-  const params = useParams();
+export default function Page({ params }) {
   const serviceNameParam = params?.serviceName ?? "";
   const decodedServiceName = decodeURIComponent(serviceNameParam);
-
   const service = services.find((s) => s.slug === decodedServiceName);
 
   if (!service) {
-    // Render 404 if no service found
     notFound();
   }
 
