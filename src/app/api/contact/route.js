@@ -169,7 +169,7 @@ export async function POST(request) {
 
     await transporter.sendMail({
       from: `"Website Contact" <${process.env.GMAIL_USER}>`,
-      to: "fahadjawad596@gmail.com",
+      to: "info@reliablebuildingdevelopers.ca",
       subject: `New contact from ${name || "website visitor"}`,
       html,
       attachments,
