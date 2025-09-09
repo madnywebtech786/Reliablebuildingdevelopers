@@ -41,21 +41,21 @@ export default function ModernContactCreative() {
     {
       id: "email",
       title: "Email",
-      value: "hello@yourcompany.com",
-      href: "mailto:hello@yourcompany.com",
+      value: "info@reliablebuildingdevelopers.ca",
+      href: "mailto:info@reliablebuildingdevelopers.ca",
       icon: <Mail className="w-5 h-5" />,
     },
     {
       id: "phone",
       title: "Phone",
-      value: "(123) 456-7890",
-      href: "tel:(123) 456-7890",
+      value: "587-437-7707",
+      href: "tel:+15874377707",
       icon: <Phone className="w-5 h-5" />,
     },
     {
       id: "address",
       title: "Address",
-      value: "Calgary, Canada",
+      value: "Calgary, AB",
       href: "#",
       icon: <MapPin className="w-5 h-5" />,
     },
@@ -244,7 +244,7 @@ export default function ModernContactCreative() {
               </div>
             </div>
 
-            <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="mt-6 grid grid-cols-1 gap-4">
               {contactCards.map((c) => (
                 <div key={c.id} className="p-4 rounded-xl bg-white/6 border border-white/6">
                   <div className="flex items-start gap-3">
@@ -314,7 +314,7 @@ export default function ModernContactCreative() {
                     value={form.message}
                     onChange={handleChange}
                     rows={6}
-                    placeholder="E.g., ‘Basement reno with legal suite in McKenzie Towne  budget $60K’"
+                    placeholder="Message"
                     className={`border px-3 py-2 rounded-lg ${errors.message ? "border-red-400" : "border-primary"} bg-transparent w-full`}
                   />
                   {errors.message && <p className="text-red-500 text-xs mt-2">{errors.message}</p>}

@@ -39,6 +39,7 @@ const navItems = [
     ],
   },
 
+  { name: "FAQs", href: "/faqs" },
   { name: "Projects", href: "/projects" },
   { name: "Contact Us", href: "/contact" },
 ];
