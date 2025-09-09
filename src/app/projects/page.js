@@ -154,7 +154,7 @@ export default function Page() {
           <div className="text-center py-20">
             <h2 className="text-3xl font-semibold mb-4">No projects found</h2>
             <p className="text-sm text-muted-foreground">
-              There are no projects for "{rawCity}". Try "all" or another city.
+              There are no projects for &quot;{rawCity}&quot;. Try &quot;all&quot; or another city.
             </p>
           </div>
         ) : (
