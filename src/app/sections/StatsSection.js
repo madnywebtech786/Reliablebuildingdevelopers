@@ -28,25 +28,25 @@ const StatsSection = () => {
   const stats = [
     {
       value: 1200,
-      label: "Happy Couples",
+      label: "Calgary Projects",
       symbol: "+",
       animation: "fade-up",
     },
     {
-      value: 1545,
-      label: "Weddings",
+      value: 15,
+      label: "Years Serving YYC",
       symbol: "+",
       animation: "fade-down",
     },
     {
-      value: 750,
-      label: "Decorations",
+      value: 98,
+      label: "Client Satisfaction",
       symbol: "%",
       animation: "fade-up",
     },
     {
       value: 265,
-      label: "Locations",
+      label: "Inspections Passed",
       symbol: "+",
       animation: "fade-down",
     },

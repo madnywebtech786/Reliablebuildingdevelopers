@@ -2,25 +2,25 @@
 "use client";
 
 import React from "react";
-import { FileText, UserCheck, Image as ImageIcon } from "lucide-react";
+import { FileText, UserCheck, ImageIcon } from "lucide-react";
 
 const steps = [
   {
     id: 1,
-    title: "Request Your Service",
-    desc: "Tell us what you need and when. Provide details about the job, location and any special requirements — we’ll review and confirm availability promptly.",
+    title: "Request Your Calgary Renovation",
+    desc: "Tell us your vision, timeline & location. We’ll review scope, check permit needs, and confirm crew availability — usually within 24 hours.",
     Icon: FileText,
   },
   {
     id: 2,
-    title: "Meet with Our Experts",
-    desc: "We’ll arrange a consultation to assess the scope, recommend materials and present a project plan — all tailored to your timeline and budget.",
+    title: "Meet Your Calgary Project Lead",
+    desc: "On-site consultation to assess structure, recommend materials for Alberta climate, and lock in a fixed quote with clear milestones.",
     Icon: UserCheck,
   },
   {
     id: 3,
-    title: "Enjoy Your New Wall Look",
-    desc: "Our certified team completes the work with meticulous finishing and a post-installation walkthrough so you’re delighted with the results.",
+    title: "Enjoy Your Finished Calgary Home",
+    desc: "Our local crew completes work with clean finishes, city inspection prep, and walkthrough — so you’re thrilled with every detail.",
     Icon: ImageIcon,
   },
 ];

@@ -9,9 +9,8 @@ import Image from "next/image";
 import React from "react";
 import RotatingTextBadge from "../components/RotatingTextBadge";
 
-// ImmigrationHero.jsx
-// Tailwind CSS required in your project (postcss or CDN). Replace the image imports
-// with your actual image paths. This is a single-file React component.
+// About.jsx  Optimized for Calgary Renovation Company
+// Tailwind CSS required. Image paths should point to your actual renovation project photos.
 
 export default function About() {
   return (
@@ -27,7 +26,8 @@ export default function About() {
           <div className="flex flex-col gap-2 text-white ">
             <p className="text-base opacity-70">01</p>
             <h2 className="text-xl font-bold">
-              Best Quality <br /> Material Standard
+              Premium <br />
+              Build Materials
             </h2>
           </div>
         </div>
@@ -41,8 +41,8 @@ export default function About() {
           <div className="flex flex-col gap-2 text-white">
             <p className="text-base opacity-70">02</p>
             <h2 className="text-xl font-bold">
-              Smart &<br />
-              Unique WallWork
+              Precision <br />
+              Craftsmanship
             </h2>
           </div>
         </div>
@@ -56,9 +56,8 @@ export default function About() {
           <div className="flex flex-col gap-2 text-white">
             <p className="text-base opacity-70">03</p>
             <h2 className="text-xl font-bold">
-              Skilled and
-              <br />
-              TrainedExperts
+              Calgary <br />
+              Trained Pros
             </h2>
           </div>
         </div>
@@ -68,59 +67,59 @@ export default function About() {
           {/* Left: image composition */}
           <div className="relative w-full h-full flex justify-center md:justify-center">
             {/* decorative dot-grid like in the design (subtle) */}
-         <div className="hidden lg:block absolute -left-20 top-0 z-10 transform translate-x-8 -translate-y-8">
-  <svg
-    width="300"
-    height="300"
-    viewBox="0 0 24 24"
-    fill="none"
-    className="zoom-effect"
-  >
-    <defs>
-      <pattern
-        id="p"
-        x="0"
-        y="0"
-        width="6"
-        height="6"
-        patternUnits="userSpaceOnUse"
-      >
-        <circle cx="1" cy="1" r="0.6" fill="#1471ba" />
-      </pattern>
-    </defs>
-    <rect width="24" height="24" fill="url(#p)" />
-  </svg>
-</div>
+            <div className="hidden lg:block absolute -left-20 top-0 z-10 transform translate-x-8 -translate-y-8">
+              <svg
+                width="300"
+                height="300"
+                viewBox="0 0 24 24"
+                fill="none"
+                className="zoom-effect"
+              >
+                <defs>
+                  <pattern
+                    id="p"
+                    x="0"
+                    y="0"
+                    width="6"
+                    height="6"
+                    patternUnits="userSpaceOnUse"
+                  >
+                    <circle cx="1" cy="1" r="0.6" fill="#1471ba" />
+                  </pattern>
+                </defs>
+                <rect width="24" height="24" fill="url(#p)" />
+              </svg>
+            </div>
 
             <div className="hidden lg:block relative z-20 w-full h-full">
               {/* Main photo */}
 
               <Image
-                src="/images/about1.png"
+                src="/images/about1.webp"
                 width={700}
                 height={700}
-                alt="Person on airplane using phone"
+                alt="Calgary kitchen renovation in progress"
                 className="w-[300px] h-[320px] rounded-tl-[15%] rounded-br-[15%] absolute -top-[15%] right-0 border-4 border-primary"
               />
               <Image
-                src="/images/about3.png"
+                src="/images/about3.webp"
                 width={700}
                 height={700}
-                alt="Person on airplane using phone"
+                alt="Calgary basement renovation team at work"
                 className="w-[300px] h-[400px] rounded-tl-[15%] rounded-br-[15%] absolute top-1/4 left-[6%] border-4 border-primary"
               />
               <Image
-                src="/images/about2.png"
+                src="/images/about2.webp"
                 width={700}
                 height={700}
-                alt="Person on airplane using phone"
+                alt="Finished Calgary bathroom renovation"
                 className="w-[300px] h-[320px] rounded-tl-[15%] rounded-br-[15%] absolute -bottom-[15%] right-0 border-4 border-primary"
               />
 
               <div className="absolute -bottom-[15%] right-[30%]">
                 <RotatingTextBadge
                   size={150}
-                  text="25 years of experience"
+                  text="Calgary Since 2005"
                   duration={14}
                 />
               </div>
@@ -128,16 +127,16 @@ export default function About() {
 
             <div className="lg:hidden relative ">
               <Image
-                src="/images/about3.png"
+                src="/images/about3.webp"
                 width={700}
                 height={700}
-                alt="Person on airplane using phone"
+                alt="Calgary renovation team at work"
                 className="w-full h-[400px] rounded-tl-[15%] rounded-br-[15%]  border-4 border-primary"
               />
               <div className="absolute -bottom-[15%] right-[0%]">
                 <RotatingTextBadge
                   size={150}
-                  text="25 years of experience"
+                  text="Calgary Since 2005"
                   duration={14}
                 />
               </div>
@@ -151,15 +150,18 @@ export default function About() {
                 About our company
               </p>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight ">
-                We Help you from Start to End Immigration.
+                Calgary Renovations Trusted From Start to Finish
               </h2>
               <div className="w-full h-1 decor relative"></div>
-
-              <p className="text-primary my-6 text-xl">
-                Lorem ipsum dolor sit amet, consectetur notted adipisicing elit
-                sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua lonm andhn. Aenean tincidunt id mauris id auctor donec at
-                ligula lacus.
+              <p className="text-primary my-6 text-lg">
+                Serving Calgary homeowners since 2005 we handle design, permits,
+                and construction with licensed, insured crews trained in
+                Alberta’s building codes and climate.
+                <br className="hidden md:block" />
+                <br className="hidden md:block" />
+                From basement suites to kitchen remodels, we deliver
+                stress-free, on-budget projects with city inspection support,
+                clear timelines, and 5-year craftsmanship warranties.
               </p>
 
               <ul className="space-y-3 mb-6">
@@ -167,7 +169,7 @@ export default function About() {
                   <Disc2 size={16} className="text-primary" />
                   <div>
                     <p className="text-gray-800 font-semibold text-base">
-                      Lorem Ipsum is not simply random text
+                      Free on-site quotes with no hidden fees
                     </p>
                   </div>
                 </li>
@@ -177,7 +179,7 @@ export default function About() {
 
                   <div>
                     <p className="text-gray-800 font-semibold text-base">
-                      Making this the first true generator on the Internet
+                      Licensed, insured & Calgary code compliant
                     </p>
                   </div>
                 </li>
@@ -185,7 +187,7 @@ export default function About() {
                   <Disc2 size={16} className="text-primary" />
                   <div>
                     <p className="text-gray-800 font-semibold text-base">
-                      Lorem Ipsum is not simply random text
+                      Project managers for clear communication
                     </p>
                   </div>
                 </li>
@@ -193,7 +195,7 @@ export default function About() {
                   <Disc2 size={16} className="text-primary" />
                   <div>
                     <p className="text-gray-800 font-semibold text-base">
-                      Lorem Ipsum is not simply random text
+                      5-year workmanship warranty on all projects
                     </p>
                   </div>
                 </li>

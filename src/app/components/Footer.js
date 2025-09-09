@@ -21,7 +21,7 @@ const Footer = () => {
   const quickLinks = [
     { name: "Home", href: "/" },
     { name: "About Us", href: "/about" },
-    { name: "Menu", href: "/menu" },
+    { name: "Projects", href: "/projects" },
     { name: "Contact Us", href: "/contact" },
   ];
 
@@ -43,20 +43,10 @@ const Footer = () => {
               />
             </Link>
             <p className="text-white text-base leading-relaxed">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis
-              aut illum rerum non, autem, alias voluptatum officia voluptates a.
+              Serving Calgary homeowners since 2005 we handle design, permits,
+              and construction with licensed, insured crews trained in Alberta’s
+              building codes and climate.
             </p>
-            <div className="flex space-x-3 pt-2">
-              {socialLinks.map((link, index) => (
-                <Link
-                  key={index}
-                  href={link.href}
-                  className="w-9 h-9 flex items-center justify-center rounded-full border-2 border-white text-white hover:bg-primary-red hover:border-primary-red transition-all duration-300"
-                >
-                  {link.icon}
-                </Link>
-              ))}
-            </div>
           </div>
 
           {/* Column 2: Quick Links */}
@@ -88,10 +78,10 @@ const Footer = () => {
                   className="text-primary-red mt-1 flex-shrink-0"
                 />
                 <a
-                  href="tel:+11234567890"
+                  href="tel:+15874377707"
                   className="hover:text-primary-red transition-colors"
                 >
-                  (123) 456-7890
+                  587-437-7707
                 </a>
               </li>
               <li className="flex items-start space-x-3">
@@ -100,40 +90,28 @@ const Footer = () => {
                   className="text-primary-red mt-1 flex-shrink-0"
                 />
                 <a
-                  href="mailto:info@barab.com"
+                  href="mailto:info@gmail.com"
                   className="hover:text-primary-red transition-colors"
                 >
                   info@gmail.com
                 </a>
-              </li>
-              <li className="flex items-start space-x-3">
-                <MapPin
-                  size={20}
-                  className="text-primary-red mt-1 flex-shrink-0"
-                />
-                <span>
-                  123 Calgary Trail SW,
-                  <br />
-                  Calgary, AB, Canada
-                </span>
               </li>
             </ul>
           </div>
 
           {/* Column 4: Location/Opening Hours */}
           <div>
-            <h4 className="font-bold text-xl text-white mb-3">Opening Hour</h4>
-            <div className="w-16 h-0.5 bg-primary-red mb-5"></div>
-            <div className="text-white space-y-2">
-              <p className="text-white">
-                Mon - Tue: <span className="text-white">10:00AM - 20:00PM</span>
-              </p>
-              <p className="text-white">
-                Fri - Sun: <span className="text-white">12:00AM - 23:00PM</span>
-              </p>
-              <p className="pt-2 text-white">
-                We are closed on Wednesday & Thursday.
-              </p>
+            <h4 className="font-bold text-xl text-white mb-3">Follow Us</h4>
+            <div className="flex space-x-3 pt-2">
+              {socialLinks.map((link, index) => (
+                <Link
+                  key={index}
+                  href={link.href}
+                  className="w-9 h-9 flex items-center justify-center rounded-full border-2 border-white text-white hover:bg-primary-red hover:border-primary-red transition-all duration-300"
+                >
+                  {link.icon}
+                </Link>
+              ))}
             </div>
           </div>
         </div>

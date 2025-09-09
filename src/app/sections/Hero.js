@@ -20,23 +20,22 @@ export default function Hero() {
           <div className="flex h-auto lg:h-screen slide1Bg ">
             <div className="min-h-[500px] w-11/12 lg:w-8/12   text-white h-full p-4 py-16 lg:p-20 flex items-center">
               <div className="w-11/12 lg:w-4/5 flex flex-col gap-5 lg:gap-4">
-                <p className="text-lg">Trusted Renovation Experts</p>
+                <p className="text-lg">Calgary’s Top-Rated Renovation Pros</p>
                 <h2 className="text-3xl md:text-5xl xl:text-6xl font-semibold">
-                  Complete Home Renovations From Concept to Completion
+                  Stress-Free Calgary Renos  Done Right
                 </h2>
                 <p className="text-sm lg:text-lg">
-                  We transform houses into dream homes with full remodels,
-                  additions, and modern updates delivered on time and on budget.
+                  We remodel Calgary homes with precision  energy upgrades, open layouts, and finishes built to last Alberta’s seasons.
                 </p>
                 <div className="flex gap-4">
                   <Link href={"/contact"}>
                     <button className="text-sm md:text-base p-2 px-4 lg:p-3 lg:px-6 text-primary bg-white rounded-2xl font-semibold cursor-pointer">
-                      Get a Free Quote
+                      Get Free Calgary Quote
                     </button>
                   </Link>
                   <Link href={"/services/home-renovation"}>
                     <button className="text-sm md:text-base p-2 px-4 lg:p-3 lg:px-6 text-white bg-primary rounded-2xl font-semibold cursor-pointer">
-                      Our Services
+                      View Calgary Services
                     </button>
                   </Link>
                 </div>
@@ -50,24 +49,22 @@ export default function Hero() {
           <div className="flex h-auto lg:h-screen slide2Bg ">
             <div className="min-h-[500px] w-11/12 lg:w-8/12   text-white h-full p-4 py-16 lg:p-20 flex items-center">
               <div className="w-11/12 lg:w-4/5 flex flex-col gap-5 lg:gap-4">
-                <p className="text-lg">Make More of Your Space</p>
+                <p className="text-lg">Unlock Hidden Value Below</p>
                 <h2 className="text-3xl md:text-5xl xl:text-6xl font-semibold">
-                  Basement Renovations <br /> Functional & Stylish
+                  Dry, Warm Calgary Basements  Guaranteed
                 </h2>
                 <p className="text-sm lg:text-lg">
-                  Turn unused basements into livable spaces rec rooms, home
-                  offices, gyms, or rental suites finished with quality
-                  craftsmanship.
+                  Turn cold basements into legal suites, gyms or theaters  with moisture control, proper insulation, and Calgary permits handled.
                 </p>
                 <div className="flex gap-4">
                   <Link href={"/projects"}>
                     <button className="text-sm md:text-base p-2 px-4 lg:p-3 lg:px-6 text-primary bg-white rounded-2xl font-semibold cursor-pointer">
-                      See Projects
+                      See Calgary Projects
                     </button>
                   </Link>
                   <Link href={"/contact"}>
                     <button className="text-sm md:text-base p-2 px-4 lg:p-3 lg:px-6 text-white bg-primary rounded-2xl font-semibold cursor-pointer">
-                      Book an Estimate
+                      Book Free Estimate
                     </button>
                   </Link>
                 </div>
@@ -81,13 +78,12 @@ export default function Hero() {
           <div className="flex h-auto lg:h-screen slide3Bg ">
             <div className="min-h-[500px] w-11/12 lg:w-8/12   text-white h-full p-4 py-16 lg:p-20 flex items-center">
               <div className="w-11/12 lg:w-4/5 flex flex-col gap-5 lg:gap-4">
-                <p className="text-lg">Design. Build. Delight.</p>
+                <p className="text-lg">Kitchens Built for Alberta Life</p>
                 <h2 className="text-3xl md:text-5xl xl:text-6xl font-semibold">
-                  Kitchen Remodeling <br /> Beautiful, Functional Kitchens
+                  Smart, Stylish Calgary Kitchens
                 </h2>
                 <p className="text-sm lg:text-lg">
-                  Custom cabinets, countertops, layouts and lighting we create
-                  kitchens that work for cooking, family life, and entertaining.
+                  Custom storage, quartz counters, chef layouts  designed for Calgary families and resale appeal in every neighborhood.
                 </p>
                 <div className="flex gap-4">
                   <Link href={"/contact"}>
@@ -95,7 +91,7 @@ export default function Hero() {
                       Get Qoute
                     </button>
                   </Link>
-                  <Link href={"tel:+11234567890"}>
+                  <Link href={"tel:+15874377707"}>
                     <button className="text-sm md:text-base p-2 px-4 lg:p-3 lg:px-6 text-white bg-primary rounded-2xl font-semibold cursor-pointer">
                       Request a Call
                     </button>
@@ -111,13 +107,12 @@ export default function Hero() {
           <div className="flex h-auto lg:h-screen slide4Bg ">
             <div className="min-h-[500px] w-11/12 lg:w-8/12   text-white h-full p-4 py-16 lg:p-20 flex items-center">
               <div className="w-11/12 lg:w-4/5 flex flex-col gap-5 lg:gap-4">
-                <p className="text-lg">Floors That Last</p>
+                <p className="text-lg">Floors That Handle Calgary Winters</p>
                 <h2 className="text-3xl md:text-5xl xl:text-6xl font-semibold">
-                  Flooring Installation & Refinishing
+                  Calgary Flooring  Installed Right
                 </h2>
                 <p className="text-sm lg:text-lg">
-                  Hardwood, laminate, tile, and vinyl flooring installed or
-                  refinished with precision for lasting beauty and performance.
+                  Moisture-tested, warranty-backed floors for basements & main levels  installed by local experts who know Alberta homes.
                 </p>
                 <div className="flex gap-4">
                   <Link href={"/services/flooring"}>

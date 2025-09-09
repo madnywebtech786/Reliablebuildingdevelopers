@@ -61,7 +61,7 @@ html {
 
 .slide1Bg {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
-    url("/images/home.png");
+    url("/images/home.webp");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -90,7 +90,7 @@ nav a:hover::before {
 
 .slide2Bg {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
-    url("/images/basement.png");
+    url("/images/basement.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -98,14 +98,14 @@ nav a:hover::before {
 
 .slide3Bg {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
-    url("/images/kitchen.png");
+    url("/images/kitchen.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .slide4Bg {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
-    url("/images/flooring.png");
+    url("/images/flooring.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

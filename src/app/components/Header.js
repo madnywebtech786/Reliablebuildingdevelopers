@@ -20,7 +20,7 @@ const navItems = [
     dropdown: [
       { name: "Home Renovation", href: "/services/home-renovation" },
       { name: "Basement Renovation", href: "/services/basement-renovation" },
-      { name: "Basement Lemination", href: "/services/basement-lemaination" },
+      { name: "Basement Lamination", href: "/services/basement-lamination" },
       { name: "Kitchen Remodeling", href: "/services/kitchen-remodeling" },
       { name: "Bathroom Remodeling", href: "/services/bathroom-remodeling" },
       { name: "Flooring", href: "/services/flooring" },
@@ -186,7 +186,7 @@ const Header = () => {
           </nav>
 
           <div className="flex items-center gap-2">
-            <Link href="tel:+11234567890" className="hidden lg:block ml-4">
+            <Link href="tel:+15874377707" className="hidden lg:block ml-4">
               <div
                 className="bg-primary text-white font-semibold text-sm py-[14px] px-8 transition-all duration-300 hover:bg-dark-text"
                 style={{
@@ -368,7 +368,7 @@ const Header = () => {
 
             {/* CTA at bottom of menu */}
             <div className="mt-6 px-2 flex flex-col gap-4">
-              <Link href="tel:+11234567890">
+              <Link href="tel:+15874377707">
                 <div
                   onClick={closeMenu}
                   className="bg-primary text-white font-semibold text-sm py-[14px] px-8 w-full text-center"
