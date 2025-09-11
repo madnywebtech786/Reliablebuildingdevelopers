@@ -3,7 +3,7 @@ const CreateCard = ({ card }) => (
     <div className="flex gap-2">
       <img className="size-11 rounded-full" src={card.image} alt="Calgary Homeowner" />
       <div className="flex flex-col">
-        <div className="flex items-center gap-1">
+        <div className="flex items-center gap-1 dark:text-black">
           <p>{card.name}</p>
         </div>
         <span className="text-xs text-slate-500">{card.handle}</span>

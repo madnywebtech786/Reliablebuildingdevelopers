@@ -12,8 +12,8 @@ export default function Page() {
     calgary: [
       {
         id: 1,
-        img1: "/images/home.png",
-        img2: "/images/kitchen.png",
+        img1: "/images/home.webp",
+        img2: "/images/kitchen.webp",
         alt: "Window Well",
         title: "Window Well",
         subtitle: "Safety meets elegance for basement windows",
@@ -21,8 +21,8 @@ export default function Page() {
       },
       {
         id: 2,
-        img1: "/images/home.png",
-        img2: "/images/kitchen.png",
+        img1: "/images/home.webp",
+        img2: "/images/kitchen.webp",
         alt: "Precast Concrete Steps",
         title: "Precast Concrete Steps",
         subtitle: "Durable steps for every entryway",
@@ -32,8 +32,8 @@ export default function Page() {
     chesteremere: [
       {
         id: 3,
-        img1: "/images/home.png",
-        img2: "/images/kitchen.png",
+        img1: "/images/home.webp",
+        img2: "/images/kitchen.webp",
         alt: "Foundation Wall Panels",
         title: "Foundation Wall Panels",
         subtitle: "Insulated and reinforced solutions",
@@ -41,8 +41,8 @@ export default function Page() {
       },
       {
         id: 4,
-        img1: "/images/home.png",
-        img2: "/images/kitchen.png",
+        img1: "/images/home.webp",
+        img2: "/images/kitchen.webp",
         alt: "Architectural Concrete Blocks",
         title: "Architectural Concrete Blocks",
         subtitle: "Aesthetic blocks with structural performance",
@@ -52,8 +52,8 @@ export default function Page() {
     strathmore: [
       {
         id: 3,
-        img1: "/images/home.png",
-        img2: "/images/kitchen.png",
+        img1: "/images/home.webp",
+        img2: "/images/kitchen.webp",
         alt: "Foundation Wall Panels",
         title: "Foundation Wall Panels",
         subtitle: "Insulated and reinforced solutions",
@@ -61,8 +61,8 @@ export default function Page() {
       },
       {
         id: 4,
-        img1: "/images/home.png",
-        img2: "/images/kitchen.png",
+        img1: "/images/home.webp",
+        img2: "/images/kitchen.webp",
         alt: "Architectural Concrete Blocks",
         title: "Architectural Concrete Blocks",
         subtitle: "Aesthetic blocks with structural performance",
@@ -72,8 +72,8 @@ export default function Page() {
     highriver: [
       {
         id: 3,
-        img1: "/images/home.png",
-        img2: "/images/kitchen.png",
+        img1: "/images/home.webp",
+        img2: "/images/kitchen.webp",
         alt: "Foundation Wall Panels",
         title: "Foundation Wall Panels",
         subtitle: "Insulated and reinforced solutions",
@@ -81,8 +81,8 @@ export default function Page() {
       },
       {
         id: 4,
-        img1: "/images/home.png",
-        img2: "/images/kitchen.png",
+        img1: "/images/home.webp",
+        img2: "/images/kitchen.webp",
         alt: "Architectural Concrete Blocks",
         title: "Architectural Concrete Blocks",
         subtitle: "Aesthetic blocks with structural performance",
@@ -92,8 +92,8 @@ export default function Page() {
     cochrane: [
       {
         id: 3,
-        img1: "/images/home.png",
-        img2: "/images/kitchen.png",
+        img1: "/images/home.webp",
+        img2: "/images/kitchen.webp",
         alt: "Foundation Wall Panels",
         title: "Foundation Wall Panels",
         subtitle: "Insulated and reinforced solutions",
@@ -101,8 +101,8 @@ export default function Page() {
       },
       {
         id: 4,
-        img1: "/images/home.png",
-        img2: "/images/kitchen.png",
+        img1: "/images/home.webp",
+        img2: "/images/kitchen.webp",
         alt: "Architectural Concrete Blocks",
         title: "Architectural Concrete Blocks",
         subtitle: "Aesthetic blocks with structural performance",
@@ -112,8 +112,8 @@ export default function Page() {
     okotoks: [
       {
         id: 3,
-        img1: "/images/home.png",
-        img2: "/images/kitchen.png",
+        img1: "/images/home.webp",
+        img2: "/images/kitchen.webp",
         alt: "Foundation Wall Panels",
         title: "Foundation Wall Panels",
         subtitle: "Insulated and reinforced solutions",
@@ -121,8 +121,8 @@ export default function Page() {
       },
       {
         id: 4,
-        img1: "/images/home.png",
-        img2: "/images/kitchen.png",
+        img1: "/images/home.webp",
+        img2: "/images/kitchen.webp",
         alt: "Architectural Concrete Blocks",
         title: "Architectural Concrete Blocks",
         subtitle: "Aesthetic blocks with structural performance",

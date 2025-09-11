@@ -108,7 +108,7 @@ const Header = () => {
           <nav className="hidden lg:flex items-center">
             <ul className="flex items-center gap-10">
               {navItems.map((item) => (
-                <li key={item.name} className="relative group">
+                <li key={item.name} className="relative group dark:text-black">
                   <Link
                     href={item.href}
                     className={`flex items-center gap-1 text-sm font-medium uppercase transition-colors hover:text-primary-red ${
@@ -210,7 +210,7 @@ const Header = () => {
               </div>
             </Link>
             <button
-              className="lg:hidden p-2"
+              className="lg:hidden p-2 dark:text-black"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               aria-label="Toggle menu"
             >
@@ -258,7 +258,7 @@ const Header = () => {
               />
             </div>
             <button onClick={closeMenu} aria-label="Close menu" className="p-2">
-              <X className="h-6 w-6" />
+              <X className="h-6 w-6 dark:text-black" />
             </button>
           </div>
 
@@ -266,7 +266,7 @@ const Header = () => {
           <nav className="overflow-y-auto h-[calc(100vh-64px)] p-6">
             <ul className="space-y-3">
               {navItems.map((item) => (
-                <li key={item.name} className="border-b border-gray-200 pb-2">
+                <li key={item.name} className="border-b border-gray-200 pb-2 dark:text-black">
                   {item.dropdown ? (
                     <>
                       <button

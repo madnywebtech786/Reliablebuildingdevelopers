@@ -14,7 +14,7 @@ export default function page() {
             {/* Top-left: MISSION (bg-white) */}
             <div className="relative order-1 md:order-1">
               <div className="bg-white rounded-lg shadow-lg p-8 h-full flex flex-col justify-center">
-                <h3 className="text-2xl font-semibold uppercase text-primary-dark mb-3">
+                <h3 className="text-2xl font-semibold uppercase text-primary-dark mb-3 dark:text-black">
                   Our Mission
                 </h3>
                 <p className="text-sm text-gray-600 leading-relaxed">

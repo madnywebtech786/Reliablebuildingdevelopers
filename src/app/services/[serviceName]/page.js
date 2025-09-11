@@ -203,11 +203,11 @@ export default function Page({ params }) {
 
           <div className="w-full lg:w-1/2 flex flex-col gap-6">
             <div>
-              <h2 className="text-4xl font-semibold uppercase">{service.name}</h2>
+              <h2 className="text-4xl font-semibold uppercase dark:text-black">{service.name}</h2>
               <div className="w-20 h-1 bg-primary my-4 rounded"></div>
             </div>
 
-            <div className="prose max-w-none">
+            <div className="prose max-w-none dark:text-black">
               <p>
                 {service.desc}
                 <br />
@@ -217,8 +217,8 @@ export default function Page({ params }) {
             </div>
 
             <div>
-              <h3 className="text-2xl font-bold mt-2">Features</h3>
-              <ul className="mt-4 space-y-3">
+              <h3 className="text-2xl font-bold mt-2 dark:text-black">Features</h3>
+              <ul className="mt-4 space-y-3 dark:text-black">
                 {service.features.map((feat, idx) => (
                   <li key={idx} className="flex items-start gap-3">
                     <CheckCircle className="w-4 h-4 flex-shrink-0 text-primary mt-1" />

@@ -210,7 +210,7 @@ export default function ModernContactCreative() {
   }
 
   return (
-    <section className="px-4 sm:px-8 md:px-12 lg:px-20 py-32 bg-primary/5">
+    <section className="px-4 sm:px-8 md:px-12 lg:px-20 py-32 bg-primary/5 dark:text-black">
       {/* Decorative SVG accents */}
       <div className="relative">
         <svg
@@ -291,7 +291,7 @@ export default function ModernContactCreative() {
                       value={form.name}
                       onChange={handleChange}
                       placeholder="Full name"
-                      className={`border px-3 py-2 rounded-lg ${errors.name ? "border-red-400" : "border-primary"} bg-transparent w-full`}
+                      className={`border dark:placeholder:text-gray-400 px-3 py-2 rounded-lg ${errors.name ? "border-red-400" : "border-primary"} bg-transparent w-full`}
                     />
                     {errors.name && <p className="text-red-500 text-xs mt-2">{errors.name}</p>}
                   </div>
@@ -302,7 +302,7 @@ export default function ModernContactCreative() {
                       value={form.email}
                       onChange={handleChange}
                       placeholder="you@company.com"
-                      className={`border border-primary px-3 py-2 rounded-lg ${errors.email ? "border-red-400" : "border-primary"} bg-transparent w-full`}
+                      className={`border dark:placeholder:text-gray-400 border-primary px-3 py-2 rounded-lg ${errors.email ? "border-red-400" : "border-primary"} bg-transparent w-full`}
                     />
                     {errors.email && <p className="text-red-500 text-xs mt-2">{errors.email}</p>}
                   </div>
@@ -315,7 +315,7 @@ export default function ModernContactCreative() {
                     onChange={handleChange}
                     rows={6}
                     placeholder="Message"
-                    className={`border px-3 py-2 rounded-lg ${errors.message ? "border-red-400" : "border-primary"} bg-transparent w-full`}
+                    className={`border dark:placeholder:text-gray-400 px-3 py-2 rounded-lg ${errors.message ? "border-red-400" : "border-primary"} bg-transparent w-full`}
                   />
                   {errors.message && <p className="text-red-500 text-xs mt-2">{errors.message}</p>}
                 </div>

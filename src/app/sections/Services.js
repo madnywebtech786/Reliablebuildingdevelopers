@@ -100,7 +100,7 @@ export default function Services() {
   ];
 
   return (
-    <div className="px-4 sm:px-8 md:px-12 lg:px-20 py-16 bg-primary/5">
+    <div className="px-4 sm:px-8 md:px-12 lg:px-20 py-16 bg-primary/5 dark:!bg-primary/5">
       <div className="text-center">
         <p className="text-sm text-secondary uppercase tracking-wider ">
           Our Services
@@ -134,8 +134,8 @@ export default function Services() {
                   />
                 </div>
                 <div className="relative z-20 bg-white min-h-[200px] group-hover:bg-primary group-hover:text-white duration-300 serviceCard p-6 py-8 -mt-10 mx-3">
-                  <h2 className="text-xl font-semibold ">{item.title}</h2>
-                  <p className="text-sm my-3">{item.desc}</p>
+                  <h2 className="text-xl font-semibold  dark:text-black">{item.title}</h2>
+                  <p className="text-sm my-3 dark:text-black">{item.desc}</p>
                   <Link
                     className="text-primary underline pb-1 text-sm group-hover:text-white duration-300"
                     href={`/services/${item.slug}`}

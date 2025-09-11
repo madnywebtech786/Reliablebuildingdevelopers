@@ -82,10 +82,10 @@ export default function FAQsSection() {
             <Aperture size={20} color="white" />
             <span className="rounded-lg text-white font-semibold">FAQs</span>
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold mt-2">
+          <h2 className="text-3xl md:text-4xl font-bold mt-2 dark:text-black">
             Frequently Asked Questions
           </h2>
-          <p className="text-sm text-slate-500 mt-4">
+          <p className="text-sm text-slate-500 mt-4 dark:text-black">
             Proactively answering FAQs boosts user confidence and cuts down on
             support tickets.
           </p>
@@ -101,7 +101,7 @@ export default function FAQsSection() {
                     setOpenIndex(openIndex === index ? null : index)
                   }
                 >
-                  <h2 className="text-sm font-semibold">{faq.question}</h2>
+                  <h2 className="text-sm font-semibold dark:text-black">{faq.question}</h2>
                   <svg
                     width="18"
                     height="18"
