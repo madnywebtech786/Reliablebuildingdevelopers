@@ -13,9 +13,7 @@ import {
 const Footer = () => {
   const socialLinks = [
     { icon: <Facebook size={16} />, href: "#" },
-    { icon: <Twitter size={16} />, href: "#" },
     { icon: <Instagram size={16} />, href: "#" },
-    { icon: <Linkedin size={16} />, href: "#" },
   ];
 
   const quickLinks = [
@@ -102,7 +100,7 @@ const Footer = () => {
           {/* Column 4: Location/Opening Hours */}
           <div>
             <h4 className="font-bold text-xl text-white mb-3">Follow Us</h4>
-            <div className="flex space-x-3 pt-2">
+            <div className="flex space-x-3 pt-2 items-center">
               {socialLinks.map((link, index) => (
                 <Link
                   key={index}
@@ -112,6 +110,14 @@ const Footer = () => {
                   {link.icon}
                 </Link>
               ))}
+              <Link href={"https://www.tiktok.com/@reliablebuilding7"}>
+                <Image
+                  src={"/images/icons/tiktok.png"}
+                  width={40}
+                  height={40}
+                  className="border-2 border-white rounded-full p-2"
+                />
+              </Link>
             </div>
           </div>
         </div>

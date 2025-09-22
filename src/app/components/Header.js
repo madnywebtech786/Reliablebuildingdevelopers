@@ -21,7 +21,6 @@ const navItems = [
     dropdown: [
       { name: "Home Renovation", href: "/services/home-renovation" },
       { name: "Basement Renovation", href: "/services/basement-renovation" },
-      { name: "Basement Lamination", href: "/services/basement-lamination" },
       { name: "Kitchen Remodeling", href: "/services/kitchen-remodeling" },
       { name: "Bathroom Remodeling", href: "/services/bathroom-remodeling" },
       { name: "Flooring", href: "/services/flooring" },

@@ -40,23 +40,6 @@ const services = [
     ],
   },
   {
-    slug: "basement-lamination",
-    img: "/images/services/basement-lamination.webp",
-    name: "Basement Lamination (Laminate Flooring for Basements)",
-    desc:
-      "Basement laminate flooring solutions designed for Calgary’s below-grade conditions  stylish wood looks with practical installation methods for cooler, humid spaces.",
-    additional_desc:
-      "Laminate can be an attractive, cost-effective basement finish when installed with appropriate moisture barriers, underlayment and subfloor prep. Modern waterproof or water-resistant laminate products and proper installation practices reduce the risk of swelling or damage, but careful moisture testing and floor preparation are essential for long life in below-grade environments. (Note: traditional laminate has moisture sensitivity  we’ll recommend the best product and installation strategy for your basement.)",
-    features: [
-      "Moisture testing and vapor barrier installation",
-      "Floating floor installation with underlayment suited for basements",
-      "Advice on waterproof vs. water-resistant laminate options",
-      "Transition solutions to main floor finishes",
-      "Warranty guidance and manufacturer-approved installation",
-      "Cost comparison vs. luxury vinyl and engineered hardwood",
-    ],
-  },
-  {
     slug: "kitchen-remodeling",
     img: "/images/services/kitchen.webp",
     name: "Kitchen Remodeling",

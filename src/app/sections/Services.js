@@ -34,14 +34,6 @@ export default function Services() {
       icon: Layers,
     },
     {
-      id: 3,
-      slug: "basement-lamination",
-      title: "Basement Lamination",
-      desc: "Stylish, moisture-resistant laminate flooring solutions designed for Calgary basements.",
-      img:"/images/services/basement-lamination.webp",
-      icon: Square,
-    },
-    {
       id: 4,
       slug: "kitchen-remodeling",
       title: "Kitchen Remodeling",

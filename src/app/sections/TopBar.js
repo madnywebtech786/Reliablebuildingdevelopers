@@ -23,9 +23,16 @@ export default function TopBar() {
       </div>
       <div className="w-1/3 hidden md:flex justify-end">
         <div className="flex items-center space-x-4">
-          <Facebook size={20} className="text-white" />
-
-          <Instagram size={20} className="text-white" />
+          <Link href={"https://www.facebook.com/profile.php?id=61578746949386"}>
+            <Facebook size={20} className="text-white" />
+          </Link>
+        
+          <Link href={"https://www.instagram.com/reliablebuildingdevelopers/"}>
+            <Instagram size={20} className="text-white" />
+          </Link>
+            <Link href={"https://www.tiktok.com/@reliablebuilding7"}>
+            <Image src={"/images/icons/tiktok.png"} width={20} height={20} />
+          </Link>
         </div>
       </div>
     </div>
