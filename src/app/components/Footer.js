@@ -12,8 +12,8 @@ import {
 
 const Footer = () => {
   const socialLinks = [
-    { icon: <Facebook size={16} />, href: "#" },
-    { icon: <Instagram size={16} />, href: "#" },
+    { icon: <Facebook size={16} />, href: "https://www.facebook.com/profile.php?id=61578746949386" },
+    { icon: <Instagram size={16} />, href: "https://www.instagram.com/reliablebuildingdevelopers/" },
   ];
 
   const quickLinks = [
