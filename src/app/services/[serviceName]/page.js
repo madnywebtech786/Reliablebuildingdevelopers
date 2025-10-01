@@ -158,6 +158,72 @@ const services = [
       "Coordination with inspections and renovation timeline",
     ],
   },
+
+  /* --- ADDED SERVICES --- */
+  {
+    slug: "garage-pad",
+    img: "/images/services/garage-pad.webp",
+    name: "Garage Pad",
+    desc:
+      "Durable concrete garage pads poured and finished to handle Calgary’s freeze-thaw cycles and vehicle loads.",
+    additional_desc:
+      "We design and pour reinforced concrete pads with proper sub-base, compaction and drainage to prevent heave and cracking. Services include steel reinforcement, control joints, slope for drainage, and finish options such as broom finish or exposed aggregate for long-term performance.",
+    features: [
+      "Proper sub-base preparation & compaction",
+      "Rebar or wire mesh reinforcement",
+      "Control joints & finishing (broom/exposed aggregate)",
+      "Slope/drainage planning to avoid standing water",
+      "Concrete curing and sealant application",
+    ],
+  },
+  {
+    slug: "sidewalk",
+    img: "/images/services/side-walk.webp",
+    name: "Sidewalks",
+    desc:
+      "Concrete and paver sidewalk installations and repairs that improve curb appeal and comply with local code and accessibility standards.",
+    additional_desc:
+      "We install new sidewalks, replace damaged panels, and provide ADA-aware ramps, accessible landings, and snow-melt system preparations. Options include poured concrete, interlocking pavers, and decorative finishes to match your property style while ensuring safe year-round access.",
+    features: [
+      "Concrete pours, paver installation & repairs",
+      "Accessible ramps & compliant landings",
+      "Edge restraints and proper drainage",
+      "Decorative finishes and patterns",
+      "Repair & trip-hazard mitigation",
+    ],
+  },
+  {
+    slug: "driveway",
+    img: "/images/services/driveway.webp",
+    name: "Driveways",
+    desc:
+      "Full driveway services: new installs, resurfacing and repairs using asphalt, concrete or interlocking pavers for lasting curb appeal.",
+    additional_desc:
+      "We handle site grading, base preparation, and material selection for driveways that withstand Alberta winters. Services include asphalt paving, concrete drives, paver installations, sealcoating, and repair of potholes and cracks to extend the life of your driveway.",
+    features: [
+      "Base excavation, compaction & grading",
+      "Asphalt, concrete or interlocking paver options",
+      "Sealcoating and surface repairs",
+      "Edge restraints and drainage planning",
+      "Snow-clearing friendly designs",
+    ],
+  },
+  {
+    slug: "side-entrance",
+    img: "/images/services/side-entrance.webp",
+    name: "Side Entrance",
+    desc:
+      "Construct and finish side entrances with steps, landings, coverings and weatherproofing for safe, attractive access points.",
+    additional_desc:
+      "We build code-compliant side entrances with durable materials, frost-protected foundations, handrails, non-slip treads, and overhead coverings as needed. Work includes framing, exterior finishes, lighting, and integration with existing walkways and drainage systems.",
+    features: [
+      "Code-compliant steps, landings & handrails",
+      "Weatherproofing and flashing details",
+      "Non-slip treads and durable finishes",
+      "Lighting and security-ready wiring",
+      "Integration with walkways and drainage",
+    ],
+  },
 ];
 
 export default function Page({ params }) {

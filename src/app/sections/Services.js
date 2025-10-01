@@ -1,4 +1,4 @@
-import { Building } from "lucide-react";
+import { Building, Car, DoorOpen, Footprints, Frame } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -53,7 +53,7 @@ export default function Services() {
       id: 6,
       slug: "flooring",
       title: "Flooring",
-      desc: "Hardwood, vinyl, tile and laminate flooring — installed with precision and durability.",
+      desc: "Hardwood, vinyl, tile and laminate flooring installed with precision and durability.",
       img:"/images/services/flooring.webp",
       icon: Hammer,
     },
@@ -79,7 +79,7 @@ export default function Services() {
       title: "Framing",
       desc: "Precision structural framing for remodels, additions, and safe, long-lasting builds.",
       img:"/images/services/framing.webp",
-      icon: Ruler,
+      icon: Frame,
     },
     {
       id: 10,
@@ -88,6 +88,38 @@ export default function Services() {
       desc: "Licensed electrical services including wiring, lighting, panels, and smart systems.",
       img:"/images/services/electrical.webp",
       icon: Zap,
+    },
+    {
+      id: 11,
+      slug: "garage-pad",
+      title: "Garage Pad",
+      desc: "Durable concrete garage pads poured and finished to handle Calgary freeze-thaw cycles and vehicle loads.",
+      img: "/images/services/garage-pad.webp",
+      icon: Warehouse,
+    },
+    {
+      id: 12,
+      slug: "sidewalk",
+      title: "Sidewalks",
+      desc: "Concrete and paver sidewalks that boost curb appeal and meet code requirements.",
+      img: "/images/services/side-walk.webp",
+      icon: Footprints,
+    },
+    {
+      id: 13,
+      slug: "driveway",
+      title: "Driveways",
+      desc: "Full driveway services: new installs, resurfacing and repairs using asphalt, concrete or interlocking pavers.",
+      img: "/images/services/driveway.webp",
+      icon: Car,
+    },
+    {
+      id: 14,
+      slug: "side-entrance",
+      title: "Side Entrance",
+      desc: "Construct and finish side entrances with proper steps, landings, coverings and weatherproofing for safe access.",
+      img: "/images/services/side-entrance.webp",
+      icon: DoorOpen,
     },
   ];
 

@@ -34,6 +34,10 @@ export default function WorkingAreas() {
       name: "Strathmore",
       desc: "15+ Roofing Services",
       img: "/images/cities/Strathmore.webp",
+    }, {
+      name: "Lethbridge",
+      desc: "8+ Framing Services",
+      img: "/images/cities/Strathmore.webp",
     },
   ];
 

@@ -26,6 +26,10 @@ const navItems = [
       { name: "Flooring", href: "/services/flooring" },
       { name: "Interior", href: "/services/interior" },
       { name: "Garage Development", href: "/services/garage-development" },
+      { name: "Side Entrance", href: "/services/side-entrance" },
+      { name: "Driveways", href: "/services/driveway" },
+      { name: "Side Walks", href: "/services/sidewalk" },
+      { name: "Garage Pad", href: "/services/garage-pad" },
 
       {
         name: "Other Services",
